@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Amit & Shivani Agarwal",
+    "relation": "Family",
+    "message": "Wishing Tanish & Shivani a lifetime filled with boundless love, endless laughter, and divine blessings!",
+    "event": "Wedding",
+    "timestamp": "Today"
+  },
+  {
+    "id": "2",
+    "name": "Rahi & Nimisha Agarwal",
+    "relation": "Family",
+    "message": "So thrilled to celebrate our favorites! Waiting for the Sangeet dance battle and unforgettable memories!",
+    "event": "Sangeet",
+    "timestamp": "Today"
+  },
+  {
+    "id": "3",
+    "name": "Rajiv & Reeta Gupta",
+    "relation": "Gupta Family",
+    "message": "Heartiest congratulations to Tanish and Shivani. May Guruji always shower His grace upon your union.",
+    "event": "Blessings",
+    "timestamp": "Today"
+  }
+]

@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', Georgia, serif;
+    --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+    --font-vibes: 'Great Vibes', cursive;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-cormorant {
+  font-family: var(--font-cormorant);
+}
+
+.font-vibes {
+  font-family: var(--font-vibes);
+}
+
+/* Gold Shimmer Effect */
+.gold-shimmer {
+  background: linear-gradient(
+    110deg,
+    #bf953f 0%,
+    #fcf6ba 25%,
+    #b38728 50%,
+    #fbf5b7 75%,
+    #aa771c 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, #c5a059, #f7e2a9, #c5a059) 1;
+}
+
+/* Custom scrollbar for mobile frame */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle floating animation */
+@keyframes subtle-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+.animate-subtle-float {
+  animation: subtle-float 6s ease-in-out infinite;
+}
+
+/* Flower Petal Fall Animation */
+@keyframes petal-fall {
+  0% {
+    opacity: 0;
+    transform: translate(0, -10px) rotate(0deg);
+  }
+  10% {
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(60px, 100vh) rotate(360deg);
+  }
+}
+
+.animate-petal {
+  animation: petal-fall linear infinite;
+}
+
+/* Wax seal pulsing gleam */
+@keyframes seal-gleam {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(212, 175, 55, 0.7), inset 0 2px 6px rgba(255, 255, 255, 0.6);
+  }
+}
+
+.animate-seal-gleam {
+  animation: seal-gleam 2.4s ease-in-out infinite;
+}

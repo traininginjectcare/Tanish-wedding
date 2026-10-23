@@ -1,0 +1,6 @@
+{
+  "name": "Tanish & Shivani Wedding Invitation",
+  "description": "An interactive mobile wedding invitation and celebration experience for Tanish and Shivani featuring wax seal opening, scratch-to-reveal cards, live countdown, schedule, themes, and RSVP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
