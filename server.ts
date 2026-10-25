@@ -92,10 +92,11 @@ app.post('/api/wishes', (req, res) => {
 });
 
 async function startServer() {
-  if (process.env.NODE_ENV === 'production' && fs.existsSync(path.join(__dirname, 'dist'))) {
-    app.use(express.static(path.join(__dirname, 'dist')));
+  const distPath = path.join(__dirname, 'dist');
+  if (fs.existsSync(distPath)) {
+    app.use(express.static(distPath));
     app.get('*', (_req, res) => {
-      res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+      res.sendFile(path.join(distPath, 'index.html'));
     });
   } else {
     // In dev mode, mount Vite middleware
