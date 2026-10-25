@@ -3,10 +3,12 @@
  * Configured with extra-soft whisper volume so crescendo passages remain gentle.
  */
 
+import weddingMusic from '../assets/wedding_music.mp3';
+
 class WeddingAudioManager {
   private audio: HTMLAudioElement | null = null;
   private isPlaying: boolean = false;
-  private audioSrc = '/assets/aistudio/india_happy-indian-classical-indian-music-494847__1__0ce51b2d.mp3';
+  private audioSrc = weddingMusic;
 
   private initAudio() {
     if (!this.audio && typeof window !== 'undefined') {

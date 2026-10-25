@@ -23,6 +23,7 @@ import { VenueSection } from './components/VenueSection';
 import { FamilyBlessings } from './components/FamilyBlessings';
 import { RSVPSection } from './components/RSVPSection';
 import { PetalShower } from './components/PetalShower';
+import sizzlingLogo from './assets/sizzling_creations_logo.png';
 
 export default function App() {
   const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false);
@@ -223,10 +224,9 @@ export default function App() {
               {/* Sizzling Creations Logo */}
               <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-amber-300/70 shadow-sm mb-2.5 bg-white p-0.5">
                 <img
-                  src="/assets/aistudio/file_00000000745881fab9e039c99e97e8d9_64f191bc.png"
+                  src={sizzlingLogo}
                   alt="Sizzling Creations"
                   className="w-full h-full object-contain rounded-full"
-                  referrerPolicy="no-referrer"
                 />
               </div>
 
